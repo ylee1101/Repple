@@ -1,0 +1,22 @@
+{
+  "name": "repple",
+  "version": "1.0.0",
+  "description": "group project - music for uber drivers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ylee1101/Repple.git"
+  },
+  "keywords": [
+    "repple"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ylee1101/Repple/issues"
+  },
+  "homepage": "https://github.com/ylee1101/Repple#readme"
+}
