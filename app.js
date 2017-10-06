@@ -7,6 +7,19 @@ var app = express();
 // exports fanburst-api 
 module.exports = require('./lib/fanburst-api');
 
+// Module Dependencies
+var Strategy = require('./strategy');
+
+/**
+ * Expose `Strategy` directly from package.
+ */
+exports = module.exports = Strategy;
+
+/**
+ * Expose constructors.
+ */
+exports.Strategy = Strategy;
+
 // Fanburst api info
 
 // Client ID: 3adad1d1-c958-4b47-8631-bff3ddec3f3d
@@ -18,6 +31,8 @@ module.exports = require('./lib/fanburst-api');
 // Callback urls: urn:ietf:wg:oauth:2.0:oob
 
 // authorization code: deabb1e5de2b025bf71715049c2da85d3efaa6411ea854eb15f734f49896b4cb
+
+// access token: 048a60c6739f9ab032b6443b9a759ed77f2c3952cb359697c370ebf48fdf9710
 
 // Main
 app.get('/',function(req,res){
