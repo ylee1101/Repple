@@ -4,6 +4,21 @@ var fs = require('fs');
 
 var app = express();
 
+// exports fanburst-api 
+module.exports = require('./lib/fanburst-api');
+
+// Fanburst api info
+
+// Client ID: 3adad1d1-c958-4b47-8631-bff3ddec3f3d
+
+// Secret: f0f59aa9b01f5bde6042efe8aaee2925aede0ed987712bec86c346b7e72fe5c3
+
+// Scopes: Using default scope
+
+// Callback urls: urn:ietf:wg:oauth:2.0:oob
+
+// authorization code: deabb1e5de2b025bf71715049c2da85d3efaa6411ea854eb15f734f49896b4cb
+
 // Main
 app.get('/',function(req,res){
 	
@@ -13,7 +28,7 @@ app.get('/',function(req,res){
 
 app.use('/public', express.static(__dirname + '/public'));
 
-/** Implementing Simple Music Server using Express JS **/
+// implementing music server through express
 app.get('/music', function(req,res){
 	// File to be served
 	
