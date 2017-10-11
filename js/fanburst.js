@@ -56,7 +56,7 @@ function fbSearch (artistSearch) {
 	})
 }
 
-console.log(fbSearch());
+// console.log(fbSearch());
 
 $(document).ready(function() {
 	$("#searchButton").on("click", function(){
