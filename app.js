@@ -28,7 +28,7 @@ exports.Strategy = Strategy;
 
 // Scopes: Using default scope
 
-// Callback urls: urn:ietf:wg:oauth:2.0:oob
+// Callback urls: https://www.getpostman.com/oauth2/callback
 
 // authorization code: deabb1e5de2b025bf71715049c2da85d3efaa6411ea854eb15f734f49896b4cb
 
