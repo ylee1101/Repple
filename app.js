@@ -86,6 +86,13 @@ app.get('/download', function(req,res){
 	
 });
 
+app.get('/',function(req,res){
+    
+    res.sendFile('public/repple.html', { root: __dirname });
+    
+
+});
+
 var port = process.env.port || 3000;
 
 app.listen(port, function(){
