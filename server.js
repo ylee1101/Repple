@@ -93,7 +93,7 @@ app.get('/',function(req,res){
 
 });
 
-var port = process.env.port || 3306;
+var port = process.env.port || 3000;
 
 app.listen(port, function(){
     console.log('app is listening at localhost:' + port);
