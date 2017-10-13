@@ -47,10 +47,77 @@ a:hover {
 }
 
 
+/*Artist form*/
+
+
+.artist_form{
+	background-color: transparent;
+	padding-top:20px;
+	width: 50%;
+	height: 400px;
+}
+
+
+.artist-head{
+  color: #6D7781;
+  font-family: 'Sofia', cursive;
+  font-size: 14px;
+  font-weight: bold;
+  font-size: 3.6em;
+  text-align: center;
+  margin-top:0px;
+  margin-bottom: 8px;
+
+}
+
+button{ 
+  border: 0;
+  width: 350px;
+  height: 40px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  background: #D3250D;
+
+}
+
+button:active {
+  background-color: gray;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+
+/*to align all the input fields
+*/
+
+form  { display: table;}
+
+label { display: table-cell; }
+
+input { display: table-cell; }
+
+/*preatty inputs*/
+
+
+input{
+    width: 350px;
+    padding: 20px 0px;
+    background: transparent;
+    border:0;
+    border-bottom: 1px solid #435160;
+    outline: none;
+    color: #6D7781;
+    font-size: 16px;
+
+}
+
+
 /* Blueprint header */
 
 .bp-header {
-	padding: 6em 10vw 2em;
+	padding: 70px 40px 50px;	
 }
 
 .bp-header__title {
@@ -189,6 +256,257 @@ a:hover {
 .bp-icon--prev:after {
 	content: '\e004';
 }
+
+.bp-header {
+	background-image: url("http://www.publicdomainpictures.net/pictures/180000/velka/vinyl-record-isolated.jpg");
+	background-position: center top;
+	padding-bottom: 300px;
+}
+
+/*Audio Player*/
+
+
+.container-audio01{
+	 width: 30%;
+    height: auto;
+    background-color:transparent;
+  /*  color: #444;*/
+   /* margin: 10px auto;*/
+    overflow: hidden;
+
+}
+
+.container-audio {
+    width: 30%;
+    height: auto;
+    background-color:transparent;
+
+    /*overflow: hidden;
+*/
+
+}
+audio {
+  width:88%;
+  background-color: transparent;
+  padding-left: 30px;
+}
+audio:nth-child(10), audio:nth-child(10), audio:nth-child(10) {
+    margin: 0;
+}
+.container-audio .colum1 {
+    width: 23px;
+    height: 5em;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    position: relative;
+}
+.container-audio .colum1:last-child {
+    margin: 0;
+}
+.container-audio .colum1 .row {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to up, #7700aa, #8800ff);
+    position: absolute;
+    -webkit-animation: Rofa 10s infinite ease-in-out;
+    animation: Rofa 10s infinite ease-in-out;
+    bottom: 0;
+}
+.container-audio .colum1:nth-of-type(1) .row {
+    -webkit-animation-delay: 3.99s;
+    animation-delay: 3.99s;
+}
+.container-audio .colum1:nth-of-type(2) .row {
+    -webkit-animation-delay: 3.80s;
+    animation-delay: 3.80s;
+}
+.container-audio .colum1:nth-of-type(3) .row {
+    -webkit-animation-delay: 3.70s;
+    animation-delay: 3.70s;
+}
+.container-audio .colum1:nth-of-type(4) .row {
+    -webkit-animation-delay: 3.60s;
+    animation-delay: 3.60s;
+}
+.container-audio .colum1:nth-of-type(5) .row {
+    -webkit-animation-delay: 3.50s;
+    animation-delay: 3.50s;
+}
+.container-audio .colum1:nth-of-type(6) .row {
+    -webkit-animation-delay: 3.40s;
+    animation-delay: 3.40s;
+}
+.container-audio .colum1:nth-of-type(7) .row {
+    -webkit-animation-delay: 3.30s;
+    animation-delay: 3.30s;
+}
+.container-audio .colum1:nth-of-type(8) .row {
+    -webkit-animation-delay: 3.20s;
+    animation-delay: 3.20s;
+}
+.container-audio .colum1:nth-of-type(9) .row {
+    -webkit-animation-delay: 3.10s;
+    animation-delay: 3.10s;
+}
+.container-audio .colum1:nth-of-type(10) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.container-audio .colum1:nth-of-type(11) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+
+
+@-webkit-keyframes Rofa {
+    0% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: yellow;
+    }
+
+    5% {
+        height: 100%;
+        -webkit-transform: translatey(15px);
+        transform: translatey(15px);
+        background-color: fuchsia;
+    }
+    10% {
+        height: 90%;
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+        background-color: bisque;
+    }
+
+    15% {
+        height: 80%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    20% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    25% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    30% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    35% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    40% {
+        height: 60%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    45% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    50% {
+        height: 50%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    55% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    60% {
+        height: 40%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    65% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    70% {
+        height: 30%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    75% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    80% {
+        height: 20%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    85% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    90% {
+        height: 10%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    95% {
+        height: 5%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    100% {
+        height: 0;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+}
+
+
 
 @media screen and (max-width: 40em) {
 	.bp-header {
