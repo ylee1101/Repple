@@ -35,13 +35,13 @@ exports.Strategy = Strategy;
 // access token: 048a60c6739f9ab032b6443b9a759ed77f2c3952cb359697c370ebf48fdf9710
 
 // Main
-app.get('/',function(req,res){
+// app.get('/',function(req,res){
 	
-	return res.redirect('/public/driverHome.html');
+// 	return res.redirect('/public/driverHome.html');
 
-});
+// });
 
-app.use('/public', express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 // implementing music server through express
 app.get('/music', function(req,res){
