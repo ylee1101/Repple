@@ -46,6 +46,7 @@ h1{
 
 .artist_form{
 	background-color: transparent;
+    opacity:5;
 	padding-top:20px;
 	width: 50%;
 	height: 400px;
@@ -55,6 +56,7 @@ h1{
 
 .artist-head{
   color: white;
+  text-shadow: 1px;
   outline-color:black;
   font-family: 'Sofia', cursive;
   font-size: 14px;
@@ -94,10 +96,13 @@ form  { display: table;
 
 
 label { display: table-cell;
-    color:lightgray;
+    color:blue;
  }
 
-input { display: table-cell; }
+input { display: table-cell; 
+color:red;
+}
+
 
 /*preatty inputs*/
 
@@ -263,7 +268,9 @@ input{
 	background-position: center top;
 	padding-bottom: 300px;
 }
-
+.page{
+    color:lightgray;
+}
 
 
 /*
