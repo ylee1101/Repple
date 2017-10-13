@@ -4,6 +4,31 @@ var fs = require('fs');
 
 var app = express();
 
+var passport = require('passport')
+var session = require('express-session')
+var bodyParser = require("body-parser");
+var validator = require("express-validator");
+// var authRoute = require("./routes/auth.js")
+var exphbs = require('express-handlebars')
+
+var db = require('./models')
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Static directory
+app.use(express.static("public"));
+
+//Middleware for validator
+app.use(validator());
+
+
 // exports fanburst-api 
 module.exports = require('./lib/fanburst-api');
 
@@ -92,6 +117,14 @@ app.get('/',function(req,res){
     
 
 });
+
+//sequelize database startup(resets when reloaded)
+db.sequelize.sync({force:true}).then(function(){
+	console.log("Nice! Database looks fine")
+  }).catch(function(err){
+	console.log(err, "Something went wrong with the Database Update!")
+  });
+
 
 var port = process.env.port || 3000;
 
